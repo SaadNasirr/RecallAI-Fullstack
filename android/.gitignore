@@ -1,0 +1,35 @@
+# Android / Gradle
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+**/build/
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+*.hprof
+lint/
+
+# Keystores (never commit signing keys)
+*.jks
+*.keystore
+
+# Local machine / secrets (copy from gradle.properties.example)
+# If you use a separate local overrides file, name it:
+gradle.local.properties
+
+# Optional: keep team-wide non-secret props in gradle.properties;
+# put API keys only in gradle.local.properties (gitignored) — see README.
+
+# Kotlin / IDE tooling logs (local only)
+.kotlin/
+
+# JVM crash dumps (local only)
+hs_err_pid*.log

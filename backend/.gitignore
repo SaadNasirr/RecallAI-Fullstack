@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment — NEVER commit real secrets (copy to .env locally)
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Logs / OS
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Test coverage
+coverage/

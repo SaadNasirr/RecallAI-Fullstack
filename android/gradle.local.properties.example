@@ -1,0 +1,15 @@
+# Copy to gradle.local.properties (gitignored) OR add the key to local.properties
+#
+# Google Maps API key — required for geofence map tiles (Create Zone, Where Am I).
+# Geofence alerts still use GPS; without this key the map screen shows blank tiles.
+#
+# Setup:
+# 1. Go to https://console.cloud.google.com/
+# 2. Create/select a project
+# 3. Enable "Maps SDK for Android"
+# 4. APIs & Services → Credentials → Create API key
+# 5. Restrict key: Android apps → package com.example.recallai + your SHA-1
+#    (run: cd android && ./gradlew signingReport)
+# 6. Paste key below and rebuild the app
+#
+GOOGLE_MAPS_API_KEY=AIzaSyA1THZUK6rasqhDC6GMNc-595iN2m3jlB0

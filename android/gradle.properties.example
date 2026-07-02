@@ -1,0 +1,6 @@
+# Copy to gradle.properties or use gradle.local.properties for secrets.
+# Do not commit real API keys to git.
+
+RECALLAI_DEVICE_BASE_URL=http://10.0.2.2:3001
+RECALLAI_TUNNEL_BASE_URL=
+GOOGLE_MAPS_API_KEY=

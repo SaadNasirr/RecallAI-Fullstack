@@ -1,0 +1,19 @@
+{
+  "watch": ["src"],
+  "ext": "ts,json",
+  "delay": "800",
+  "legacyWatch": true,
+  "ignore": [
+    ".cursor/**",
+    "uploads/**",
+    "*.log",
+    "dist/**",
+    "node_modules/**",
+    ".git/**",
+    ".turbo/**",
+    ".next/**",
+    "coverage/**"
+  ],
+  "exec": "ts-node src/index.ts"
+}
+

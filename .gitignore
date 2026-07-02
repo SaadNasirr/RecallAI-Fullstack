@@ -1,0 +1,99 @@
+# ==========================================
+# RECALL AI - SECURE MULTI-PROJECT GITIGNORE
+# ==========================================
+
+# ------------------------------------------
+# 1. OS & System Files (Prevents sending local metadata)
+# ------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ------------------------------------------
+# 2. Environment Variables & Secrets (CRITICAL SECURITY)
+# ------------------------------------------
+# Ignore all .env files that contain actual API keys/secrets
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/.env.*
+# Allow tracking the example env files so your friend knows what variables to configure
+!**/.env.example
+!**/gradle.properties.example
+
+# ------------------------------------------
+# 3. Android-Specific (Keys, Keystores, local paths, and build files)
+# ------------------------------------------
+# User-specific local SDK path properties (contains path to local Android SDK)
+**/local.properties
+
+# Android keystores (never commit signing keys to GitHub!)
+**/*.keystore
+**/*.jks
+**/*.pepk
+
+# Firebase configuration file (contains specific Firebase credentials, each dev gets their own)
+**/google-services.json
+
+# Local IDE configuration & compiler/build artifacts
+**/.gradle/
+**/build/
+**/.kotlin/
+**/.cxx/
+**/.externalNativeBuild/
+**/*.iml
+**/.idea/
+**/captures/
+**/*.apk
+**/*.aab
+
+# Gradle local properties
+**/gradle.local.properties
+
+# ------------------------------------------
+# 4. Node.js / Backend-Specific
+# ------------------------------------------
+# Ignore all node_modules recursively
+**/node_modules/
+
+# Ignore compiled Javascript/TypeScript distribution directories
+**/dist/
+**/*.tsbuildinfo
+
+# Test coverage reports
+**/coverage/
+
+# ------------------------------------------
+# 5. Tooling & IDE Settings
+# ------------------------------------------
+**/.vscode/
+**/.cursor/
+**/*.swp
+**/*~
+.project
+.classpath
+.settings/
+
+# ------------------------------------------
+# 6. Logs & Runtime Files
+# ------------------------------------------
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/hs_err_pid*.log
+
+# ------------------------------------------
+# 7. Backend-Specific Uploads/Temporary Data
+# ------------------------------------------
+# Prevent uploading user files to GitHub
+backend/uploads/**
+# Keep the directory structure by allowing .gitkeep
+!backend/uploads/.gitkeep
